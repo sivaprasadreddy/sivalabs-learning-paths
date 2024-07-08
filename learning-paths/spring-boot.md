@@ -13,15 +13,16 @@ Here is my recommended approach to learn Spring Boot.
 
 ## 2. If you are new to Spring itself
 Spring Boot is an opinionated framework built on top of various Spring portfolio projects.
-So, if you are completely new to Spring itself, I would recommend first to learn a few Spring Core concepts:
-* Dependency Injection
-* Spring Bean Configuration
-* Bean Scopes
-* Aspect Oriented Programming (AOP)
+
+So, if you are completely new to Spring itself, 
+I would recommend first to learn a few Spring Core concepts:
+  * Dependency Injection
+  * Spring Bean Configuration
+  * Bean Scopes
+  * Aspect Oriented Programming (AOP)
 
 
-* **Resources:**
-  * [Spring Boot Missing Guide : What you need to know before starting with Spring Boot](https://www.youtube.com/playlist?list=PLuNxlOYbv61jZL1IiciTgWezZoqEp4WXh)
+What you need to know before starting with Spring Boot: [Spring Boot Missing Guide](https://www.youtube.com/playlist?list=PLuNxlOYbv61jZL1IiciTgWezZoqEp4WXh)
 
 You don't have to master every detail of these concepts in-depth.
 But having a decent understanding of these concepts will make it easy to understand Spring Boot.
@@ -59,21 +60,21 @@ In Stage 1, you learn the fundamentals of Spring Boot.
 
   * **Spring Boot Application Configuration**: Spring Boot provides support for providing the application configuration properties in a wide variety of ways.
     But you mostly like will be using three or four approaches to provide default configuration and overriding the configuration.
-    * **Resources:**
-       * [Spring Boot Application Configuration Tutorial](https://www.sivalabs.in/spring-boot-application-configuration-tutorial/)
-       * [Spring Boot Tips : Part 2 - Managing Application Configuration Properties In The Right Way](https://www.youtube.com/watch?v=4OX7hbAGuRE)
+
+    * [Spring Boot Application Configuration Tutorial](https://www.sivalabs.in/spring-boot-application-configuration-tutorial/)
+    * [Spring Boot Tips : Part 2 - Managing Application Configuration Properties In The Right Way](https://www.youtube.com/watch?v=4OX7hbAGuRE)
   
   * **Spring Boot Profiles**: Profiles is a concept in Spring framework which helps in configuring the application differently for different environments.
     In real projects, you typically want to configure your application with different property values for different environments (dev, qa, prod).
     You can use Spring profiles to customize/configure your application per-environment and enable the desired profile when starting the application.
     Spring Boot makes is easy to use profiles with some default conventions.
-    * **Resources:**
-        * [Spring Boot Profiles Tutorial](https://www.sivalabs.in/spring-boot-profiles-tutorial/)
+
+    * [Spring Boot Profiles Tutorial](https://www.sivalabs.in/spring-boot-profiles-tutorial/)
 
   * **Spring Boot Testing**: Testing is an integral part of any professional software development.
     Spring Boot provides excellent support for testing.
-    * **Resources:**
-      * [Spring Boot Testing Tutorial](https://www.sivalabs.in/spring-boot-testing-tutorial/): This tutorial will give an overview of Spring Boot's testing support.
+
+    * [Spring Boot Testing Tutorial](https://www.sivalabs.in/spring-boot-testing-tutorial/): This tutorial will give an overview of Spring Boot's testing support.
       But when you use databases or Kafka, etc then you can use the [Testcontainers](https://testcontainers.com/) library for testing. You can learn this in the next stage.
 
 After completing these tutorials, you should have a good grasp on Spring Boot basics.
@@ -91,22 +92,19 @@ Finally, you will learn some best practices while building REST APIs using Sprin
 Spring Boot provides higher-level abstractions to make it easy to work with Databases.
 You can use newer **JdbcClient** or older **JdbcTemplate** to execute SQL queries without writing low-level boilerplate code.
 
-* **Resources:**
-    * [Spring Boot JdbcClient Tutorial](https://www.sivalabs.in/spring-boot-jdbcclient-tutorial/)
-    * [Spring Boot JdbcTemplate Tutorial](https://www.sivalabs.in/spring-boot-jdbctemplate-tutorial/)
+* [Spring Boot JdbcClient Tutorial](https://www.sivalabs.in/spring-boot-jdbcclient-tutorial/)
+* [Spring Boot JdbcTemplate Tutorial](https://www.sivalabs.in/spring-boot-jdbctemplate-tutorial/)
 
 Database transaction management is a crucial part of any real world application using an SQL database.
 Spring Boot makes it straightforward to apply transaction boundaries using **@Transactional** annotation.
 But it is crucial to understand how the transaction management works to avoid some common gotchas.
 
-* **Resources:**
-    * [Spring Boot Database Transaction Management Tutorial](https://www.sivalabs.in/spring-boot-database-transaction-management-tutorial/)
+* [Spring Boot Database Transaction Management Tutorial](https://www.sivalabs.in/spring-boot-database-transaction-management-tutorial/)
 
 In real world projects, it is highly recommended to use database migration tools like **Flyway** or **Liquibase** to apply any database changes.
 Again, Spring Boot makes it very straightforward to use those database migration tools with it's auto-configuration support.
 
-* **Resources:**
-    * [Spring Boot Flyway Database Migration Tutorial](https://www.sivalabs.in/spring-boot-flyway-database-migration-tutorial/)
+* [Spring Boot Flyway Database Migration Tutorial](https://www.sivalabs.in/spring-boot-flyway-database-migration-tutorial/)
 
 JPA/Hibernate is the most popular ORM library in Java.
 Spring Data JPA provides a higher-level abstraction on top of JPA that simplifies performing CRUD operations, pagination, etc.
@@ -118,16 +116,14 @@ This is the right time to learn some best practices while building REST APIs suc
 using proper status codes, etc.
 Also, now is the right time to learn how to test REST APIs by writing integration tests or repository tests by using Testcontainers.
 
-* **Resources:**
-  * [Spring Boot REST API Best Practices - Part 1 : Implementing Get Collection API](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-1/)
-  * [Spring Boot REST API Best Practices - Part 2 : Implementing Create and Update APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-2/)
-  * [Spring Boot REST API Best Practices - Part 3 : Implementing FindById and DeleteById APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-3/)
+* [Spring Boot REST API Best Practices - Part 1 : Implementing Get Collection API](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-1/)
+* [Spring Boot REST API Best Practices - Part 2 : Implementing Create and Update APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-2/)
+* [Spring Boot REST API Best Practices - Part 3 : Implementing FindById and DeleteById APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-3/)
 
 It's very important to handle exceptions and return meaningful responses in case of failures.
 Spring Boot provides different approaches to handle exceptions.
 
-* **Resources:**
-  * [Spring Boot REST API Best Practices - Part 4 : Exception Handling in REST APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-4/)
+* [Spring Boot REST API Best Practices - Part 4 : Exception Handling in REST APIs](https://www.sivalabs.in/spring-boot-rest-api-best-practices-part-4/)
 
 To learn more about testing the Spring Boot applications, you can refer the following resources:
 * [Java Testing Made Easy](https://www.youtube.com/playlist?list=PLuNxlOYbv61jtHHFHBOc9N7Dg5jn013ix)
@@ -173,11 +169,10 @@ In Stage 4, you can focus on learning how to build microservices and secure them
 By now you know how to build a monolithic application using Spring Boot.
 Now, you can focus on building microservices using Spring Boot, Spring Cloud, etc.
 
-* **Resources:**
-    * [Spring Security OAuth 2.0 Series](https://www.sivalabs.in/spring-security-oauth2-tutorial-introduction/)
-    * [Spring Boot Microservices Course](https://www.youtube.com/playlist?list=PLuNxlOYbv61g_ytin-wgkecfWDKVCEDmB)
-    * [Spring Boot and OAuth2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2)
-    * [Securing a REST API with OAuth 2.0 Spring Academy Course](https://spring.academy/courses/spring-academy-secure-rest-api-oauth2)
+* [Spring Security OAuth 2.0 Series](https://www.sivalabs.in/spring-security-oauth2-tutorial-introduction/)
+* [Spring Boot Microservices Course](https://www.youtube.com/playlist?list=PLuNxlOYbv61g_ytin-wgkecfWDKVCEDmB)
+* [Spring Boot and OAuth2 Guide](https://spring.io/guides/tutorials/spring-boot-oauth2)
+* [Securing a REST API with OAuth 2.0 Spring Academy Course](https://spring.academy/courses/spring-academy-secure-rest-api-oauth2)
 
 ### Stage 5
 In stage 5, you can focus on what is required for your project and be able to use them with Spring Boot.
@@ -187,9 +182,9 @@ With the knowledge you gained by now, you shouldn't have a problem in learning h
 At this stage, I would recommend focusing on learning Architecture concepts.
 
 * [Spring Modulith](https://docs.spring.io/spring-modulith/reference/): An approach to building modular monolithic applications using Spring Boot.
-  * **Resources:**
-      * [Spring Modulith Crash Course : Building Modular Monoliths using Spring Boot](https://www.youtube.com/watch?v=FkP2aZiBrhg)
-      * [The Modern Monolith, with Spring Modulith](https://www.youtube.com/watch?v=Pae2D4XcEIg)
+
+    * [Spring Modulith Crash Course : Building Modular Monoliths using Spring Boot](https://www.youtube.com/watch?v=FkP2aZiBrhg)
+    * [The Modern Monolith, with Spring Modulith](https://www.youtube.com/watch?v=Pae2D4XcEIg)
 
 * **Domain Driven Design (DDD)**
   * [Architecturally evident Spring applications with jMolecules](https://www.youtube.com/watch?v=-I7KiV_6f-s)
@@ -210,6 +205,7 @@ At this stage, I would recommend focusing on learning Architecture concepts.
 * [SivaLabs YouTube channel](https://www.youtube.com/@sivalabs)
 * [Thomas Vitale Blog](https://www.thomasvitale.com/)
 * [Reflectoring Blog](https://reflectoring.io/)
+* [Marco Behler Blog](https://www.marcobehler.com/)
 * [Vlad Mihalcea Blog](https://vladmihalcea.com/blog/)
 * [Philip Riecks Blog](https://rieckpil.de/)
 * [Piotr's TechBlog](https://piotrminkowski.com/)
